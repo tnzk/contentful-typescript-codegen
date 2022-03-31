@@ -60,7 +60,7 @@ const cli = meow(
 )
 
 async function runCodegen(outputFile: string) {
-  const getEnvironmentPath = path.resolve(process.cwd(), "./getContentfulEnvironment.js")
+  const getEnvironmentPath = path.resolve(process.cwd(), "./getContentfulEnvironment.cjs")
   const getEnvironment = require(getEnvironmentPath)
   const environment = await getEnvironment()
   const contentTypes = await environment.getContentTypes({ limit: 1000 })
