@@ -1,3 +1,5 @@
+# THIS IS A FORK
+
 # contentful-typescript-codegen
 
 Generate typings from your Contentful environment.
